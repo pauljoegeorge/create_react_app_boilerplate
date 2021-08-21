@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "eslint-plugin-prettier": "^3.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -16,8 +17,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.js",
-    "lint:fix": "eslint --fix src/**/*.js"
+    "clean": "prettier --write ./src/**/*.{js,jsx}",
+    "lint": "eslint --ext .js,.jsx src --color",
+    "lint:fix": "eslint --fix ./src/**/*.{js,jsx}",
+    "lint:autofix": "npx prettier -w src --loglevel silent && eslint --ext .js,.jsx src --fix --quiet"
   },
   "eslintConfig": {
     "extends": [
@@ -40,16 +43,21 @@
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^7.0.1"
+    "husky": "^7.0.1",
+    "prettier": "^2.3.2"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix",
-      "pre-push": "npm run lint"
+      "pre-commit": "npm run clean",
+      "pre-push": "npm run clean"
     }
   }
 }
