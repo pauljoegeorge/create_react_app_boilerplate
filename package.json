@@ -60,5 +60,11 @@
       "pre-commit": "lint-staged",
       "pre-push": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
