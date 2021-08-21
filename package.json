@@ -54,7 +54,7 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "eslint --quiet --fix"
+      "eslint --quiet --color"
     ],
     "*.{json,md,html}": [
       "prettier --write"
