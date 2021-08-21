@@ -42,4 +42,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 # TODO: 
 - Google Analytics
 - Axios - HTTP client
-- 
+- styled
+- bootstrap
