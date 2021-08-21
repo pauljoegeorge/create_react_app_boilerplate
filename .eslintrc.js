@@ -21,8 +21,18 @@ module.exports = {
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    'react/jsx-one-expression-per-line': 'off',
-    'linebreak-style': 0,
+    'react/jsx-filename-extension': [1, {
+      extensions: ['.js', '.jsx'],
+    }],
+    'object-curly-newline': ['error', {
+      ObjectExpression: 'always',
+      ObjectPattern: {
+        multiline: true,
+      },
+      ImportDeclaration: 'never',
+      ExportDeclaration: {
+        multiline: true, minProperties: 3,
+      },
+    }],
   },
 };

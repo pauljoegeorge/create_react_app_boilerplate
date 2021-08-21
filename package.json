@@ -18,15 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean": "prettier --write ./src/**/*.{js,jsx}",
-    "lint": "eslint --ext .js,.jsx src --color",
-    "lint:fix": "eslint --fix ./src/**/*.{js,jsx}",
-    "lint:autofix": "npx prettier -w src --loglevel silent && eslint --ext .js,.jsx src --fix --quiet"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -51,7 +43,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^4.3.8",
+    "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2"
   },
