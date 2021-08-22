@@ -41,6 +41,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 # TODO:
 - Router
+- Locale
 - Google Analytics
 - Axios - HTTP client
 - styled
