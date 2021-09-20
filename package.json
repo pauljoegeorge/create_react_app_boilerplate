@@ -7,8 +7,11 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "eslint-plugin-prettier": "^3.4.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-gtm-module": "^2.0.11",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
@@ -18,6 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean": "prettier --write ./src/**/*.{js,jsx}",
+    "lint:autofix": "prettier-eslint --write ./src/**/*.{js,jsx}",
     "prepare": "husky install"
   },
   "browserslist": {
@@ -45,7 +49,9 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "prettier-eslint": "^13.0.0",
+    "prettier-eslint-cli": "^5.0.1"
   },
   "husky": {
     "hooks": {

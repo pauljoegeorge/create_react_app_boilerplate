@@ -4,6 +4,8 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    'prettier',
+    'eslint:recommended',
     'plugin:react/recommended',
     'airbnb',
     'react-app',
@@ -18,8 +20,12 @@ module.exports = {
   },
   plugins: [
     'react',
+    'prettier',
   ],
   rules: {
+    'react/prop-types': 'off',
+    'no-console': [2],
+    'react/jsx-props-no-spreading': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': [1, {
       extensions: ['.js', '.jsx'],
@@ -34,5 +40,6 @@ module.exports = {
         multiline: true, minProperties: 3,
       },
     }],
+    'import/prefer-default-export': 'off',
   },
 };
