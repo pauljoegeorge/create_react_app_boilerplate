@@ -1,9 +1,10 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import ErrorRoutes from './pages/Error/route';
 import HomeRoutes from './pages/Home/route';
 import SettingRoutes from './pages/Setting/route';
 
-const routes = [...HomeRoutes, ...SettingRoutes];
+const routes = [...HomeRoutes, ...SettingRoutes, ...ErrorRoutes];
 
 const renderRoute = (route, props) => (
   <Route
