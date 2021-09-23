@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean": "prettier --write ./src/**/*.{js,jsx}",
-    "lint:autofix": "prettier-eslint --write ./src/**/*.{js,jsx}",
+    "lint:fix": "prettier-eslint --write ./src/**/*.{js,jsx}",
     "prepare": "husky install"
   },
   "browserslist": {
