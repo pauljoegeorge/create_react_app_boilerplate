@@ -42,7 +42,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 # TODO:
 - Router [DONE]
 - Locale
-- Google Analytics
+- Google Analytics [DONE]
 - Axios - HTTP client
 - styled
 - bootstrap
