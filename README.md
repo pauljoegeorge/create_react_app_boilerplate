@@ -3,11 +3,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Prerequisite
-  - Install husky
+  - Install husky && npm 7
     - husky will run lint command on git commit operation
     - this helps to block pushing unformatted code to Github
   ```
-    npx husky-init && npm install
+   - git clone https://github.com/pauljoegeorge/create_react_app_boilerplate.git .
+   - rm package-lock.json
+   - npm i -g npm@7
+   - npm install
+   - npm run prepare
   ```
 
 ## Available Scripts
