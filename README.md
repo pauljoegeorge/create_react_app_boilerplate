@@ -47,11 +47,18 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
   - Update GTM container ID to start using
     - https://github.com/pauljoegeorge/create_react_app_boilerplate/blob/b3902682d4d5adc7e8d533e14e1bb88e267476fb/src/index.jsx#L8-L10
 
+### `styled and react-bootstrap`
+  - for styling and responsive template
+  - refer:
+    - `react-bootstrap`:
+      - https://github.com/pauljoegeorge/create_react_app_boilerplate/blob/master/src/containers/Home/index.jsx#L3
+    - `styled`
+      - https://github.com/pauljoegeorge/create_react_app_boilerplate/blob/master/src/components/Wrapper.jsx#L1-L3
 
 # TODO:
 - Router [DONE]
 - Locale
 - Google Analytics [DONE]
 - Axios - HTTP client
-- styled
-- bootstrap
+- styled [DONE]
+- react-bootstrap [DONE]
