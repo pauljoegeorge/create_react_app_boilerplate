@@ -8,12 +8,16 @@
     "@testing-library/user-event": "^12.8.3",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-prettier": "^3.4.1",
+    "install": "^0.13.0",
+    "npm": "^8.1.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.4",
     "react-dom": "^17.0.2",
     "react-gtm-module": "^2.0.11",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -21,8 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "clean": "prettier --write ./src/**/*.{js,jsx}",
-    "lint:fix": "prettier-eslint --write ./src/**/*.{js,jsx}",
+    "clean": "prettier --write src --ext .js --ext .jsx",
+    "lint:fix": "prettier-eslint --write '**/*.jsx'",
     "prepare": "husky install"
   },
   "browserslist": {
